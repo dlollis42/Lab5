@@ -3,7 +3,7 @@
 
 //from SortedListLinked.h
 template < class T >
-NextNode<T>** SortedListLinked<T>::find(T* item)
+NextNode<T>** SortedListLinked<T>::findAdd(T* item) // need two finds one for add and one for remove
 {
    NextNode<T>* prev = NULL;
    NextNode<T>* curr = head;
