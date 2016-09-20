@@ -145,14 +145,15 @@ void deleteCDs(ListArray<CD>* list)
 
 int main(int argc, char* argv[])
 {
-   Gtk::Main kit(argc, argv);  //this must be first
+    //this must be first
    ListArray<CD>* cds = CD::readCDs("cds.txt");
    //DO THIS
    //create the sorted linked list (call it sorted_list)
 
 
 
-
+   deleteCDs(cds);
+}   
 
 
 
