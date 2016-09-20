@@ -27,6 +27,9 @@ NextNode<T>** SortedListLinked<T>::find(T* item)
 
    return nodes;
 } 
+template <class T> 
+void SortedListLinked<T>::add(T* item)
+{
    NextNode<T>* node = new NextNode<T>(item);
 
    //special case: adding to an empty list
