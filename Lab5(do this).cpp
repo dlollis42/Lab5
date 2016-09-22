@@ -47,19 +47,16 @@ void SortedListLinked<T>::add(T* item)
 
    //DO THIS
    //adding to the top of the list (check prev)
-   if (           )
+   if (prev==0)
    {
-
-
-
-
+      return NULL; //this is probably wrong
    }
    else    //general add
    {
-
-
-
-
+      NextNode<T>* prev = findAdd(index-1);
+      NextNode<T>* curr = prev->getNext();
+      prev-> setNext(node);
+      node-> setNext(curr);
    }
 
    sze++;
